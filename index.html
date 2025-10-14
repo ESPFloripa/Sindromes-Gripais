@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso: Avaliação e Manejo Ambulatorial de Síndrome Gripal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .module-content {
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- Cabeçalho -->
+        <header class="relative bg-cover bg-center rounded-xl overflow-hidden mb-10" style="background-image: url('https://i.imgur.com/BLznatB.png')">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative z-10 text-center py-16 md:py-24 px-4">
+                <h1 class="text-3xl md:text-5xl font-bold text-white">Curso Virtual</h1>
+                <p class="text-xl md:text-2xl text-gray-200 mt-2">Avaliação e Manejo Ambulatorial de Síndrome Gripal</p>
+                <p class="mt-4 text-gray-300 max-w-3xl mx-auto">Este curso aborda o manejo da síndrome gripal no contexto de concomitância viral de COVID-19, Influenza e outros vírus respiratórios.</p>
+                <div class="mt-8 flex justify-center items-center flex-wrap gap-4">
+                    <button id="instructionsBtn" class="bg-white/20 text-white font-semibold py-2 px-4 rounded-lg hover:bg-white/30 transition-colors backdrop-blur-sm border border-white/30 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Curso Livre - Instruções
+                    </button>
+                    <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="bg-white/20 text-white font-semibold py-2 px-4 rounded-lg hover:bg-white/30 transition-colors backdrop-blur-sm border border-white/30 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Curso Livre - Inscrição
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Seção Iniciar Curso -->
+        <div id="start-section" class="text-center mb-10 p-6 bg-white rounded-xl shadow-md">
+            <p class="text-lg text-gray-700 mb-4 font-medium">Antes de iniciar o curso leia as instruções e faça a sua inscrição acima!</p>
+            <button id="startCourseBtn" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-all shadow-lg text-xl transform hover:scale-105">
+                Iniciar Curso
+            </button>
+        </div>
+        
+        <div id="courseContent" class="hidden">
+            <!-- Seção do Vídeo -->
+            <section class="mb-10 bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Vídeo Introdutório</h2>
+                <div class="relative h-0 pb-[56.25%] overflow-hidden rounded-lg shadow-inner">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/eFR7bgWbL7Y" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <main class="grid grid-cols-1 gap-6">
+
+                <!-- Módulo 1: Identificação da Síndrome Gripal -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <h2 class="text-2xl font-semibold text-blue-700">Módulo 1: Identificação da Síndrome Gripal</h2>
+                        <svg class="w-6 h-6 text-blue-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 border-t border-gray-200 module-content">
+                        <p class="mb-4">O primeiro passo é identificar corretamente um paciente com Síndrome Gripal (SG). Considere o quadro respiratório agudo iniciado nos últimos 7 dias.</p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                                <h3 class="font-bold text-lg mb-2">Pacientes > 2 anos</h3>
+                                <p>Apresenta quadro respiratório agudo com pelo menos <strong>dois</strong> dos seguintes sintomas:</p>
+                                <ul class="list-disc list-inside mt-2 space-y-1">
+                                    <li>Febre (aferida ou referida)</li>
+                                    <li>Calafrios</li>
+                                    <li>Tosse</li>
+                                    <li>Dor de garganta</li>
+                                    <li>Coriza / congestão nasal</li>
+                                    <li>Nova alteração de olfato/paladar</li>
+                                    <li>Dor de cabeça</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                <h3 class="font-bold text-lg mb-2">Pacientes &lt; 2 anos</h3>
+                                <p>Apresenta febre de início súbito/recente com pelo menos <strong>um</strong> dos seguintes sintomas:</p>
+                                <ul class="list-disc list-inside mt-2 space-y-1">
+                                    <li>Tosse</li>
+                                    <li>Dor de garganta</li>
+                                    <li>Coriza</li>
+                                    <li>Congestão nasal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Módulo 2: Sinais de Alerta e SRAG -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <h2 class="text-2xl font-semibold text-red-700">Módulo 2: Sinais de Alerta (SRAG)</h2>
+                        <svg class="w-6 h-6 text-red-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 border-t border-gray-200 module-content">
+                        <p class="mb-4">É crucial identificar critérios de urgência e emergência que configuram a <strong>Síndrome Respiratória Aguda Grave (SRAG)</strong>. Pacientes com SG e pelo menos <strong>um</strong> dos seguintes sinais devem ser encaminhados com urgência:</p>
+                        <ul class="list-disc list-inside space-y-2 mb-6 bg-red-50 p-4 rounded-lg border border-red-200">
+                            <li><strong>Falta de ar</strong> ou desconforto respiratório (tiragem intercostal, batimento de asa de nariz).</li>
+                            <li><strong>Aumento da frequência respiratória</strong> (taquipneia) para a idade.</li>
+                            <li><strong>Pressão ou dor persistente no tórax</strong>.</li>
+                            <li><strong>Saturação de O2 ≤ 94%</strong> em ar ambiente.</li>
+                            <li><strong>Cianose</strong> (coloração azulada) de lábios ou rosto.</li>
+                            <li><strong>Confusão mental</strong>, alteração de consciência ou letargia.</li>
+                            <li><strong>Hipotensão</strong> (PAS < 90 mmHg em adultos ou baixa para a idade em crianças).</li>
+                        </ul>
+                        <div class="overflow-x-auto">
+                            <h3 class="font-bold text-lg mb-2">Frequência Respiratória Normal (OMS)</h3>
+                            <table class="w-full text-left border-collapse rounded-lg overflow-hidden">
+                                <thead class="bg-gray-200">
+                                    <tr>
+                                        <th class="p-3 font-semibold">Faixa Etária</th>
+                                        <th class="p-3 font-semibold">FR Normal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b"><td class="p-3">0 a 2 meses</td><td class="p-3">Até 60 mrm</td></tr>
+                                    <tr class="border-b bg-gray-50"><td class="p-3">2 a 11 meses</td><td class="p-3">Até 50 mrm</td></tr>
+                                    <tr class="border-b"><td class="p-3">12 meses a 5 anos</td><td class="p-3">Até 40 mrm</td></tr>
+                                    <tr class="border-b bg-gray-50"><td class="p-3">6 a 8 anos</td><td class="p-3">Até 30 mrm</td></tr>
+                                    <tr><td class="p-3">Acima de 8 anos</td><td class="p-3">Até 20 mrm</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Módulo 3: Testagem e Diagnóstico Diferencial -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <h2 class="text-2xl font-semibold text-yellow-700">Módulo 3: Testagem e Diagnóstico</h2>
+                        <svg class="w-6 h-6 text-yellow-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 border-t border-gray-200 module-content">
+                        <p class="mb-4">A diferenciação clínica entre Influenza e COVID-19 é incerta. Todo caso de SG deve ser testado.</p>
+                        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200 mb-6">
+                            <h3 class="font-bold text-lg mb-2">Protocolo de Testagem</h3>
+                            <p>O teste indicado na APS e UPA é o <strong>Teste Rápido de Antígeno para SARS-CoV-2 (TRAg)</strong>, a ser realizado entre o dia do início dos sintomas (D0) e o 8º dia (D8).</p>
+                        </div>
+                        <h3 class="font-bold text-xl mb-4">Interpretação dos Resultados do TRAg para SARS-CoV-2:</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-lg bg-green-100 border border-green-300">
+                                <h4 class="font-bold">1º TRAg POSITIVO:</h4>
+                                <p>Confirma COVID-19. Descarte Influenza (coinfeccção é infrequente). Avalie indicação de tratamento com Nirmatrelvir/Ritonavir.</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-red-100 border border-red-300">
+                                <h4 class="font-bold">1º TRAg NEGATIVO:</h4>
+                                <p class="mb-2">A conduta depende da suspeita clínica:</p>
+                                <ul class="list-disc list-inside pl-4">
+                                    <li><strong>Se suspeita de Influenza:</strong> Maneje como caso suspeito de COVID-19 E Influenza. Avalie indicação de Oseltamivir. Agende um <strong>2º TRAg em 48-72h</strong>.</li>
+                                    <li><strong>Se NÃO há suspeita clínica forte de Influenza:</strong> Maneje como caso suspeito de COVID-19 e agende um <strong>2º TRAg em 48-72h</strong>.</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 rounded-lg bg-blue-100 border border-blue-300">
+                                <h4 class="font-bold">Resultado do 2º TRAg (se realizado):</h4>
+                                <ul class="list-disc list-inside pl-4">
+                                    <li><strong>POSITIVO:</strong> Confirma COVID-19, descarte Influenza.</li>
+                                    <li><strong>NEGATIVO:</strong> Descarte COVID-19 e continue o manejo para Influenza, se clinicamente indicado.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Módulo 4: Tratamento Sintomático e Recomendações Gerais -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <h2 class="text-2xl font-semibold text-green-700">Módulo 4: Tratamento Sintomático e Cuidados Gerais</h2>
+                        <svg class="w-6 h-6 text-green-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 border-t border-gray-200 module-content">
+                        <p class="mb-4">O manejo inicial foca no alívio dos sintomas e na prevenção da transmissão.</p>
+                        <div class="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 mb-6 rounded-r-lg" role="alert">
+                            <p class="font-bold">Atenção: Evite o uso de Anti-inflamatórios!</p>
+                            <p>O uso rotineiro de AINEs (ex: Ibuprofeno, Diclofenaco) deve ser evitado. Eles podem mascarar a piora clínica e estão associados a um risco aumentado de complicações, como pneumonia bacteriana secundária. Em crianças, há o risco de Síndrome de Reye com AAS.</p>
+                        </div>
+                        <ul class="space-y-4">
+                            <li><strong>Febre e Dor:</strong> Prescrever <strong>Paracetamol</strong> ou <strong>Dipirona</strong> 500-1000mg a cada 6 horas.</li>
+                            <li><strong>Corticoides:</strong> Não prescrever, exceto em exacerbações de asma/DPOC ou em COVID-19 grave com necessidade de O2.</li>
+                            <li><strong>Tosse:</strong> Medidas caseiras como uma colher de chá de mel.</li>
+                            <li><strong>Hidratação:</strong> Orientar a ingestão de pelo menos 2L de água por dia.</li>
+                            <li><strong>Isolamento:</strong> Orientar isolamento domiciliar por 7-10 dias do início dos sintomas, com reavaliação para liberação.</li>
+                            <li><strong>Higiene:</strong> Reforçar a importância da higiene das mãos, etiqueta respiratória e uso de máscara.</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <!-- Módulo 5: Tratamento com Oseltamivir -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <h2 class="text-2xl font-semibold text-purple-700">Módulo 5: Tratamento Específico para Influenza (Oseltamivir)</h2>
+                        <svg class="w-6 h-6 text-purple-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 border-t border-gray-200 module-content">
+                        <div class="bg-purple-50 p-4 rounded-lg border border-purple-200 mb-6">
+                            <h3 class="font-bold text-lg mb-2">Indicação de Oseltamivir</h3>
+                            <p>Prescrever para casos suspeitos de Influenza com fatores de risco para complicações, idealmente nas primeiras <strong>48 horas</strong> do início dos sintomas.</p>
+                            <p class="text-sm mt-2"><strong>Nota:</strong> Em gestantes, pode-se iniciar em até 3-4 dias. Em casos de SRAG, o benefício pode ocorrer mesmo se iniciado em até 5 dias.</p>
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-4">Grupos de Risco para Complicações por Influenza:</h3>
+                        <div class="p-4 bg-gray-100 rounded-lg">
+                            <ul class="list-disc list-inside space-y-1 columns-1 md:columns-2">
+                                <li>Gestantes e puérperas (até 2 semanas)</li>
+                                <li>Adultos ≥ 60 anos</li>
+                                <li>Crianças < 5 anos (especialmente < 2 anos)</li>
+                                <li>População indígena</li>
+                                <li>Pneumopatias (incluindo asma)</li>
+                                <li>Cardiovasculopatias (exceto HAS)</li>
+                                <li>Nefropatias e Hepatopatias</li>
+                                <li>Doenças hematológicas (ex: anemia falciforme)</li>
+                                <li>Distúrbios metabólicos (incluindo Diabetes Mellitus)</li>
+                                <li>Imunossupressão (medicamentos, neoplasias, HIV)</li>
+                                <li>Obesidade (IMC ≥ 40 em adultos)</li>
+                                <li>Transtornos neurológicos que afetam a função respiratória</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-8 bg-blue-50 p-6 rounded-lg">
+                            <h3 class="font-bold text-xl mb-4 text-blue-800">Evidências Clínicas sobre o Oseltamivir (Parecer Técnico)</h3>
+                            <p class="mb-4">Embora as diretrizes do MS, CDC e OMS recomendem o uso precoce de oseltamivir em grupos de risco, é importante entender as evidências:</p>
+                            <ul class="list-disc list-inside space-y-3">
+                                <li><strong>Redução de Sintomas:</strong> O benefício mais consistente é a redução modesta na duração dos sintomas (cerca de 1 dia, podendo chegar a 2-3 dias em pacientes mais vulneráveis).</li>
+                                <li><strong>Complicações Graves e Hospitalizações:</strong> Revisões sistemáticas e meta-análises (Cochrane 2014, JAMA 2023) <strong>não encontraram evidência convincente</strong> de que o oseltamivir reduza significativamente complicações graves, hospitalizações ou mortalidade em ambiente ambulatorial.</li>
+                                <li><strong>Justificativa da Recomendação:</strong> A indicação se baseia no <strong>princípio da precaução</strong>. Dado o potencial de gravidade da influenza em grupos vulneráveis e o perfil de segurança favorável do medicamento (principais efeitos adversos são náuseas/vômitos leves), o potencial benefício, mesmo que modesto, supera os riscos.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-8">
+                            <h3 class="font-bold text-xl mb-4">Posologia do Oseltamivir</h3>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left border-collapse rounded-lg overflow-hidden">
+                                    <thead class="bg-purple-200">
+                                        <tr>
+                                            <th class="p-3 font-semibold">Faixa Etária / Peso</th>
+                                            <th class="p-3 font-semibold">Posologia (5 dias)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b"><td class="p-3">Adultos</td><td class="p-3">75 mg, 12/12h</td></tr>
+                                        <tr class="border-b bg-purple-50"><td class="p-3">Criança > 1 ano: ≤ 15 kg</td><td class="p-3">30 mg, 12/12h</td></tr>
+                                        <tr class="border-b"><td class="p-3">Criança > 1 ano: > 15 kg a 23 kg</td><td class="p-3">45 mg, 12/12h</td></tr>
+                                        <tr class="border-b bg-purple-50"><td class="p-3">Criança > 1 ano: > 23 kg a 40 kg</td><td class="p-3">60 mg, 12/12h</td></tr>
+                                        <tr class="border-b"><td class="p-3">Criança > 1 ano: > 40 kg</td><td class="p-3">75 mg, 12/12h</td></tr>
+                                        <tr class="border-b bg-purple-50"><td class="p-3">Criança < 1 ano: 0 a 8 meses</td><td class="p-3">3 mg/kg, 12/12h</td></tr>
+                                        <tr><td class="p-3">Criança < 1 ano: 9 a 11 meses</td><td class="p-3">3.5 mg/kg, 12/12h</td></tr>
+                                    </tbody>
+                                </table>
+                                <p class="text-sm mt-2">Ajustar a dose em caso de comprometimento renal. Para crianças que não engolem cápsulas, o conteúdo pode ser diluído em água conforme orientação.</p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+                
+                <!-- Módulo 6: Fluxograma Resumo -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden group open" open>
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <h2 class="text-2xl font-semibold text-gray-800">Fluxograma Resumo do Manejo</h2>
+                        <svg class="w-6 h-6 text-gray-800 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 border-t border-gray-200 module-content">
+                        <p class="mb-4">Este fluxograma consolida todo o processo de avaliação e manejo ambulatorial da Síndrome Gripal. Clique no botão abaixo para abrir o PDF original.</p>
+                        <div class="text-center mt-4">
+                            <a href="https://drive.google.com/file/d/1DdenV_8h-TC4waRaJGhKd2GFkVvL9sRM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Abrir Fluxograma (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Seção do Quiz -->
+                <section id="quiz-section" class="bg-white rounded-xl shadow-md p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Quiz Interativo: Teste seu Conhecimento</h2>
+                    <div id="quiz-container" class="max-w-3xl mx-auto"></div>
+                    <div id="quiz-results" class="text-center mt-6 hidden"></div>
+                </section>
+
+                <!-- Seção Teste de Aproveitamento -->
+                <section class="bg-white rounded-xl shadow-md p-8 text-center">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Finalize o Curso</h2>
+                    <p class="text-gray-600 mb-6">Para finalizar o curso e obter seu certificado faça o teste de aproveitamento clicando no botão abaixo:</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenSTEs0kGYAYul7gL624f57smoh6sMkVxUhCfyrv39BgG6KA/viewform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors shadow-lg text-lg">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                        Teste de Aproveitamento
+                    </a>
+                </section>
+
+            </main>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="text-center mt-12 py-6 border-t">
+            <p class="text-gray-600">Conteúdo adaptado dos documentos da Prefeitura de Florianópolis - Secretaria Municipal de Saúde (Maio/2025).</p>
+            <p class="text-sm text-gray-400 mt-1">Curso organizado pela Escola de Saúde Pública de Florianópolis em parceria com o Departamento de Gestão da Clínica.</p>
+        </footer>
+    </div>
+
+    <!-- Modal de Instruções -->
+    <div id="instructionsModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden">
+        <div id="modalContent" class="bg-white rounded-xl shadow-2xl w-full max-w-2xl p-6 md:p-8 relative transform transition-all duration-200 scale-95 opacity-0">
+            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Instruções para Certificação</h2>
+            <div class="text-gray-700 space-y-3">
+                <ul class="list-disc list-inside space-y-2 text-base">
+                    <li>Este Curso Livre é voltado para profissionais de saúde de nível superior e será certificado com a carga horária de 2 horas/aula.</li>
+                    <li>Você deve se inscrever no curso no mês corrente preenchendo todos os campos <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">neste link</a>.</li>
+                    <li>Após a inscrição, explore o conteúdo e responda o teste de aproveitamento (disponível no fim da página) até o último dia do mês.</li>
+                    <li>Para responder o teste, você deve estar logado em uma conta Google. Preencha seu nome completo, CPF e e-mail exatamente como na inscrição.</li>
+                    <li>A nota de corte para aprovação é de <strong>80%</strong>.</li>
+                    <li>O teste de aproveitamento permite apenas <strong>uma tentativa</strong>. Caso não seja aprovado, você poderá se inscrever e repetir o curso no mês seguinte.</li>
+                    <li>O certificado será disponibilizado no <a href="http://cursossms.pmf.sc.gov.br/ver/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">site da ESP</a> até o último dia útil do mês seguinte à finalização do curso. O login é seu CPF e a senha padrão é 123.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const instructionsBtn = document.getElementById('instructionsBtn');
+        const instructionsModal = document.getElementById('instructionsModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const modalContent = document.getElementById('modalContent');
+
+        const openModal = () => {
+            instructionsModal.classList.remove('hidden');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        };
+
+        const closeModal = () => {
+            modalContent.classList.add('scale-95', 'opacity-0');
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            setTimeout(() => {
+                instructionsModal.classList.add('hidden');
+            }, 200);
+        };
+
+        instructionsBtn.addEventListener('click', openModal);
+        closeModalBtn.addEventListener('click', closeModal);
+        instructionsModal.addEventListener('click', (event) => {
+            if (event.target === instructionsModal) {
+                closeModal();
+            }
+        });
+
+        // Lógica do Quiz
+        const quizData = [
+            {
+                question: "Um paciente de 30 anos com tosse e dor de garganta, mas sem febre, é considerado um caso de Síndrome Gripal (SG).",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Uma criança de 1 ano com febre e tosse já preenche os critérios para Síndrome Gripal (SG).",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            },
+            {
+                question: "Saturação de oxigênio de 95% em ar ambiente é um critério para Síndrome Respiratória Aguda Grave (SRAG).",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Confusão mental de início recente em um paciente com SG é um sinal de alerta para SRAG.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            },
+            {
+                question: "O teste de escolha para diagnóstico de SG na APS é o PCR para Influenza.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Um primeiro Teste Rápido de Antígeno (TRAg) para COVID-19 positivo confirma o diagnóstico e a coinfecção por Influenza deve ser descartada.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            },
+            {
+                question: "Se o primeiro TRAg para COVID-19 for negativo em um paciente com suspeita de Influenza, um segundo teste deve ser agendado em 24 horas.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "O uso de Ibuprofeno é recomendado como primeira linha para febre e dores no corpo em casos de SG.",
+                options: ["Verdadeadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Corticoides são indicados rotineiramente para todos os pacientes com SG para diminuir a inflamação.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Oseltamivir deve ser prescrito para todos os pacientes com suspeita de Influenza, independentemente dos fatores de risco.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Um adulto de 65 anos com suspeita de Influenza é elegível para tratamento com Oseltamivir.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            },
+            {
+                question: "O Oseltamivir deve ser iniciado idealmente nas primeiras 48 horas de sintomas para maior eficácia.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            },
+            {
+                question: "Gestantes com suspeita de Influenza não devem usar Oseltamivir devido ao risco para o feto.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "A principal evidência do uso de Oseltamivir em pacientes ambulatoriais é a redução significativa da mortalidade.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Náuseas e vômitos são efeitos adversos comuns associados ao uso de Oseltamivir.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            },
+            {
+                question: "O uso de Oseltamivir é justificado em grupos de risco pelo 'princípio da precaução', mesmo com evidências modestas de benefício em desfechos graves.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            },
+            {
+                question: "Um paciente com COVID-19 confirmado pode receber Nirmatrelvir/Ritonavir mesmo que precise de oxigênio suplementar.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Para um paciente com SG, o isolamento domiciliar deve ser recomendado independentemente do resultado do primeiro teste.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            },
+            {
+                question: "Um paciente com COVID-19 pode sair do isolamento após 5 dias se estiver assintomático, sem necessidade de teste.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Falso"
+            },
+            {
+                question: "Anti-inflamatórios não esteroidais (AINEs) são evitados na influenza por poderem mascarar a piora clínica e aumentar o risco de complicações.",
+                options: ["Verdadeiro", "Falso"],
+                answer: "Verdadeiro"
+            }
+        ];
+
+        const quizContainer = document.getElementById('quiz-container');
+        const quizResults = document.getElementById('quiz-results');
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let userAnswers = [];
+
+        function loadQuiz() {
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const currentQuestion = quizData[currentQuestionIndex];
+            quizContainer.innerHTML = `
+                <div class="bg-gray-100 p-6 rounded-lg shadow-inner">
+                    <p class="text-lg font-medium text-gray-700 mb-4">${currentQuestionIndex + 1}. ${currentQuestion.question}</p>
+                    <div class="flex justify-center gap-4">
+                        ${currentQuestion.options.map(option => `
+                            <button class="quiz-option bg-blue-500 text-white font-semibold py-2 px-8 rounded-lg hover:bg-blue-600 transition-colors" data-option="${option}">
+                                ${option}
+                            </button>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            document.querySelectorAll('.quiz-option').forEach(button => {
+                button.addEventListener('click', selectAnswer);
+            });
+        }
+
+        function selectAnswer(e) {
+            const selectedOption = e.target.dataset.option;
+            userAnswers[currentQuestionIndex] = selectedOption;
+            const correct = selectedOption === quizData[currentQuestionIndex].answer;
+            if (correct) {
+                score++;
+            }
+            
+            const buttons = document.querySelectorAll('.quiz-option');
+            buttons.forEach(button => {
+                button.disabled = true;
+                if (button.dataset.option === quizData[currentQuestionIndex].answer) {
+                    button.classList.remove('bg-blue-500', 'hover:bg-blue-600');
+                    button.classList.add('bg-green-500'); // Resposta correta
+                } else if (button.dataset.option === selectedOption) {
+                     button.classList.remove('bg-blue-500', 'hover:bg-blue-600');
+                    button.classList.add('bg-red-500'); // Resposta errada do usuário
+                }
+            });
+            
+            setTimeout(() => {
+                 currentQuestionIndex++;
+                if (currentQuestionIndex < quizData.length) {
+                    showQuestion();
+                } else {
+                    showResults();
+                }
+            }, 1200);
+        }
+
+        function showResults() {
+            quizContainer.innerHTML = '';
+            quizResults.classList.remove('hidden');
+            const percentage = Math.round((score / quizData.length) * 100);
+            
+            let resultMessage = '';
+            if (percentage >= 80) {
+                resultMessage = '<h3 class="text-2xl font-bold text-green-600">Parabéns! Você está bem preparado para o Teste de Aproveitamento!</h3>';
+            } else {
+                resultMessage = '<h3 class="text-2xl font-bold text-red-600">Não foi desta vez. Tente novamente!</h3>';
+            }
+
+            quizResults.innerHTML = `
+                ${resultMessage}
+                <p class="text-xl mt-2">Sua pontuação final é: <span class="font-bold">${score} de ${quizData.length}</span> (${percentage}%)</p>
+                <button id="restart-quiz" class="mt-6 bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                    Refazer Quiz
+                </button>
+            `;
+
+            document.getElementById('restart-quiz').addEventListener('click', () => {
+                 currentQuestionIndex = 0;
+                 score = 0;
+                 userAnswers = [];
+                 quizResults.classList.add('hidden');
+                 loadQuiz();
+            });
+        }
+
+        window.addEventListener('load', loadQuiz);
+        
+        // Lógica para Iniciar o Curso
+        const startCourseBtn = document.getElementById('startCourseBtn');
+        const courseContent = document.getElementById('courseContent');
+        const startSection = document.getElementById('start-section');
+
+        startCourseBtn.addEventListener('click', () => {
+            courseContent.classList.remove('hidden');
+            startSection.classList.add('hidden');
+            // Rola suavemente para o início do conteúdo do curso
+            courseContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    </script>
+</body>
+
+</html>
+
