@@ -73,12 +73,18 @@
                 </div>
             </section>
 
+            <!-- Seção do Podcast -->
+            <section class="mb-10 bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Podcast: Discussão do Tema</h2>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2MahwQxpq0rjwxx4QSH1rG?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </section>
+
             <main class="grid grid-cols-1 gap-6">
 
-                <!-- Módulo 1: Identificação da Síndrome Gripal -->
+                <!-- Passo 1: Identificação da Síndrome Gripal -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden group">
                     <summary class="flex items-center justify-between p-6 cursor-pointer">
-                        <h2 class="text-2xl font-semibold text-blue-700">Módulo 1: Identificação da Síndrome Gripal</h2>
+                        <h2 class="text-2xl font-semibold text-blue-700">Passo 1: Identificação da Síndrome Gripal</h2>
                         <svg class="w-6 h-6 text-blue-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="p-6 border-t border-gray-200 module-content">
@@ -99,7 +105,7 @@
                             </div>
                             <div class="bg-green-50 p-4 rounded-lg border border-green-200">
                                 <h3 class="font-bold text-lg mb-2">Pacientes &lt; 2 anos</h3>
-                                <p>Apresenta febre de início súbito/recente com pelo menos <strong>um</strong> dos seguintes sintomas:</p>
+                                <p>Apresenta febre de início súbito/recente (aferida ou referida) com pelo menos <strong>um</strong> dos seguintes sintomas:</p>
                                 <ul class="list-disc list-inside mt-2 space-y-1">
                                     <li>Tosse</li>
                                     <li>Dor de garganta</li>
@@ -111,85 +117,166 @@
                     </div>
                 </details>
 
-                <!-- Módulo 2: Sinais de Alerta e SRAG -->
+                <!-- Passo 2: Sinais de Alerta e SRAG -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden group">
                     <summary class="flex items-center justify-between p-6 cursor-pointer">
-                        <h2 class="text-2xl font-semibold text-red-700">Módulo 2: Sinais de Alerta (SRAG)</h2>
+                        <h2 class="text-2xl font-semibold text-red-700">Passo 2: Sinais de Alerta (SRAG)</h2>
                         <svg class="w-6 h-6 text-red-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="p-6 border-t border-gray-200 module-content">
                         <p class="mb-4">É crucial identificar critérios de urgência e emergência que configuram a <strong>Síndrome Respiratória Aguda Grave (SRAG)</strong>. Pacientes com SG e pelo menos <strong>um</strong> dos seguintes sinais devem ser encaminhados com urgência:</p>
-                        <ul class="list-disc list-inside space-y-2 mb-6 bg-red-50 p-4 rounded-lg border border-red-200">
-                            <li><strong>Falta de ar</strong> ou desconforto respiratório (tiragem intercostal, batimento de asa de nariz).</li>
+                        <ul class="list-disc list-inside space-y-3 mb-4 bg-red-50 p-4 rounded-lg border border-red-200">
+                            <li><strong>Falta de ar ou desconforto respiratório</strong> (como batimento de asas do nariz, tiragem intercostal; em crianças considerar também tiragem supra/subesternal, supraclavicular, subcostal, contração da musculatura acessória da respiração e movimento paradoxal do abdome).</li>
+                            <li><strong>Em crianças considerar também:</strong> bradipneia e ritmo respiratório irregular, gemidos expiratórios, estridor inspiratório ou sibilos e aumento do tempo expiratório.</li>
                             <li><strong>Aumento da frequência respiratória</strong> (taquipneia) para a idade.</li>
-                            <li><strong>Pressão ou dor persistente no tórax</strong>.</li>
-                            <li><strong>Saturação de O2 ≤ 94%</strong> em ar ambiente.</li>
+                            <li><strong>Pressão ou dor persistente no tórax</strong>. <sup class="text-red-500 font-bold">[1]</sup></li>
+                            <li><strong>Saturação de O2 ≤ 94%</strong> em ar ambiente. <sup class="text-red-500 font-bold">[2]</sup></li>
                             <li><strong>Cianose</strong> (coloração azulada) de lábios ou rosto.</li>
                             <li><strong>Confusão mental</strong>, alteração de consciência ou letargia.</li>
-                            <li><strong>Hipotensão</strong> (PAS < 90 mmHg em adultos ou baixa para a idade em crianças).</li>
+                            <li><strong>PAS < 90 mmHg em adultos ou baixa para a idade em crianças</strong>.</li>
                         </ul>
-                        <div class="overflow-x-auto">
-                            <h3 class="font-bold text-lg mb-2">Frequência Respiratória Normal (OMS)</h3>
-                            <table class="w-full text-left border-collapse rounded-lg overflow-hidden">
-                                <thead class="bg-gray-200">
-                                    <tr>
-                                        <th class="p-3 font-semibold">Faixa Etária</th>
-                                        <th class="p-3 font-semibold">FR Normal</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b"><td class="p-3">0 a 2 meses</td><td class="p-3">Até 60 mrm</td></tr>
-                                    <tr class="border-b bg-gray-50"><td class="p-3">2 a 11 meses</td><td class="p-3">Até 50 mrm</td></tr>
-                                    <tr class="border-b"><td class="p-3">12 meses a 5 anos</td><td class="p-3">Até 40 mrm</td></tr>
-                                    <tr class="border-b bg-gray-50"><td class="p-3">6 a 8 anos</td><td class="p-3">Até 30 mrm</td></tr>
-                                    <tr><td class="p-3">Acima de 8 anos</td><td class="p-3">Até 20 mrm</td></tr>
-                                </tbody>
-                            </table>
+                        <div class="text-sm text-gray-600 space-y-2 mb-6">
+                           <p><sup class="text-red-500 font-bold">[1]</sup> Se pressão/dor persistente no tórax e sem outros sinais/sintomas que necessitam atenção urgente, discuta <a href="https://bit.ly/apoiogripefloripa" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">(bit.ly/apoiogripefloripa)</a> para decidir se considera SRAG e encaminha com urgência.</p>
+                           <p><sup class="text-red-500 font-bold">[2]</sup> Se SaO2 91-94% e sem outros sinais/sintomas que necessitam atenção urgente, discuta <a href="https://bit.ly/apoiogripefloripa" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">(bit.ly/apoiogripefloripa)</a> para decidir se considera SRAG, aplica O2 e encaminha com urgência.</p>
                         </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-8">
+                            <div class="overflow-x-auto">
+                                <h3 class="font-bold text-lg mb-2">Frequência Respiratória Normal (OMS)</h3>
+                                <table class="w-full text-left border-collapse rounded-lg overflow-hidden">
+                                    <thead class="bg-gray-200">
+                                        <tr>
+                                            <th class="p-3 font-semibold">Faixa Etária</th>
+                                            <th class="p-3 font-semibold">FR Normal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b"><td class="p-3">0 a 2 meses</td><td class="p-3">Até 60 mrm</td></tr>
+                                        <tr class="border-b bg-gray-50"><td class="p-3">2 a 11 meses</td><td class="p-3">Até 50 mrm</td></tr>
+                                        <tr class="border-b"><td class="p-3">12 meses a 5 anos</td><td class="p-3">Até 40 mrm</td></tr>
+                                        <tr class="border-b bg-gray-50"><td class="p-3">6 a 8 anos</td><td class="p-3">Até 30 mrm</td></tr>
+                                        <tr><td class="p-3">Acima de 8 anos</td><td class="p-3">Até 20 mrm</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <h3 class="font-bold text-lg mb-2">Frequência Cardíaca em Crianças</h3>
+                                 <img src="https://i.imgur.com/aqLIVHd.png" alt="Tabela de Frequência Cardíaca Normal em Crianças" class="rounded-lg shadow-md border">
+                            </div>
+                        </div>
+
+                        <div class="text-center mb-6 border-t pt-6">
+                             <h3 class="font-bold text-lg mb-4">Recursos Adicionais (PACK Brasil)</h3>
+                            <a href="https://bit.ly/packfloripa2025" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Acessar PACK Brasil
+                            </a>
+                            <p class="text-sm text-gray-700 mt-3">§ Se paciente adulto (> 18 anos): utilize o PACK para avaliar e manejar se precisa de atenção urgente, usando o quadro vermelho.</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded-lg text-center mt-6">
+                            <img src="https://i.imgur.com/0g00ndq.png" alt="Fluxograma para avaliação de paciente com tosse" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Fluxograma para avaliação de paciente com tosse</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded-lg text-center mt-6">
+                             <img src="https://i.imgur.com/pTquPes.png" alt="Fluxograma de avaliação e diagnóstico de COVID-19" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Fluxograma para avaliação e diagnóstico de covid-19</p>
+                        </div>
+
                     </div>
                 </details>
 
-                <!-- Módulo 3: Testagem e Diagnóstico Diferencial -->
+                <!-- Passo 3: Identificação de caso suspeito, Testagem, Notificação e Diagnóstico -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden group">
                     <summary class="flex items-center justify-between p-6 cursor-pointer">
-                        <h2 class="text-2xl font-semibold text-yellow-700">Módulo 3: Testagem e Diagnóstico</h2>
+                        <h2 class="text-2xl font-semibold text-yellow-700">Passo 3: Identificação de caso suspeito, Testagem, Notificação e Diagnóstico</h2>
                         <svg class="w-6 h-6 text-yellow-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="p-6 border-t border-gray-200 module-content">
-                        <p class="mb-4">A diferenciação clínica entre Influenza e COVID-19 é incerta. Todo caso de SG deve ser testado.</p>
+                        <p class="mb-4">Identifique se paciente é caso suspeito de influenza com ou sem suspeita de COVID-19 (todo caso suspeito de influenza tem critérios para caso suspeito de COVID-19, mas nem todo caso suspeito de COVID-19 tem critérios para caso suspeito de Influenza - para ser um caso suspeito de influenza é necessário que paciente apresente febre, mesmo que somente referida, exceto se idoso que pode ter influenza sem febre).</p>
+                        
+                        <div class="text-center my-6">
+                            <img src="https://i.imgur.com/mradWCs.png" alt="Definição de caso suspeito de Influenza e COVID-19" class="w-full max-w-2xl mx-auto rounded-lg shadow-md border">
+                        </div>
+
+                        <p class="mb-4">A diferenciação clínica entre Influenza e COVID-19 é incerta. Além da influenza, as infecções respiratórias agudas podem estar associadas a diferentes patógenos, como o SARS-CoV-2, vírus sincicial respiratório (VSR), rinovírus, adenovírus, parainfluenza (1, 2, 3 e 4), metapneumovírus, entre outros. Todo caso de SG deve ser testado.</p>
+
+                        <div class="text-center mb-6">
+                            <a href="https://bit.ly/packfloripa2025" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Acessar PACK Brasil
+                            </a>
+                            <p class="text-sm text-gray-700 mt-3">§ Se paciente adulto (> 18 anos): utilize o PACK para ajudar no diagnóstico de COVID-19.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center mb-8">
+                             <img src="https://i.imgur.com/FIqL3jW.png" alt="Fluxograma de avaliação e diagnóstico de COVID-19 do PACK" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Fluxograma para avaliação e diagnóstico de covid-19</p>
+                        </div>
+
                         <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200 mb-6">
                             <h3 class="font-bold text-lg mb-2">Protocolo de Testagem</h3>
                             <p>O teste indicado na APS e UPA é o <strong>Teste Rápido de Antígeno para SARS-CoV-2 (TRAg)</strong>, a ser realizado entre o dia do início dos sintomas (D0) e o 8º dia (D8).</p>
                         </div>
+                        
+                        <div class="text-center mb-6">
+                             <a href="https://bit.ly/packfloripa2025" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Acessar PACK Brasil
+                            </a>
+                            <p class="text-sm text-gray-700 mt-3">§ Se paciente adulto (> 18 anos): utilize o PACK para decidir e interpretar teste de COVID.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center mb-8">
+                            <img src="https://i.imgur.com/HQLNoXB.png" alt="Fluxograma para testagem de COVID-19 do PACK" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Fluxograma para testagem de COVID-19</p>
+                        </div>
+
                         <h3 class="font-bold text-xl mb-4">Interpretação dos Resultados do TRAg para SARS-CoV-2:</h3>
                         <div class="space-y-4">
                             <div class="p-4 rounded-lg bg-green-100 border border-green-300">
                                 <h4 class="font-bold">1º TRAg POSITIVO:</h4>
-                                <p>Confirma COVID-19. Descarte Influenza (coinfeccção é infrequente). Avalie indicação de tratamento com Nirmatrelvir/Ritonavir.</p>
+                                <p>Confirma COVID-19. Descarte Influenza (coinfeccção é infrequente). Notifique COVID-19 com CID-10 B972. Avalie indicação de tratamento com Nirmatrelvir/Ritonavir.</p>
                             </div>
                             <div class="p-4 rounded-lg bg-red-100 border border-red-300">
                                 <h4 class="font-bold">1º TRAg NEGATIVO:</h4>
-                                <p class="mb-2">A conduta depende da suspeita clínica:</p>
                                 <ul class="list-disc list-inside pl-4">
-                                    <li><strong>Se suspeita de Influenza:</strong> Maneje como caso suspeito de COVID-19 E Influenza. Avalie indicação de Oseltamivir. Agende um <strong>2º TRAg em 48-72h</strong>.</li>
-                                    <li><strong>Se NÃO há suspeita clínica forte de Influenza:</strong> Maneje como caso suspeito de COVID-19 e agende um <strong>2º TRAg em 48-72h</strong>.</li>
+                                    <li><strong>Se suspeita de Influenza:</strong> Maneje como caso suspeito de COVID-19 E Influenza. Notifique caso suspeito de COVID-19 com CID-10 B972 (paciente tem critérios para COVID-19 e o 1º TRAg negativo não exclui COVID). Avalie indicação de Oseltamivir. Agende um 2º TRAg em 48-72h.</li>
+                                    <li><strong>Se não preenche critérios para suspeita de Influenza:</strong> Maneje como caso suspeito de COVID-19. Notifique caso suspeito de COVID-19 com CID-10 B972 (paciente tem critérios para COVID-19 e o 1º TRAg negativo não exclui COVID). Agende um 2º TRAg em 48-72h.</li>
                                 </ul>
                             </div>
                             <div class="p-4 rounded-lg bg-blue-100 border border-blue-300">
                                 <h4 class="font-bold">Resultado do 2º TRAg (se realizado):</h4>
                                 <ul class="list-disc list-inside pl-4">
-                                    <li><strong>POSITIVO:</strong> Confirma COVID-19, descarte Influenza.</li>
-                                    <li><strong>NEGATIVO:</strong> Descarte COVID-19 e continue o manejo para Influenza, se clinicamente indicado.</li>
+                                    <li><strong>POSITIVO:</strong> Confirma COVID-19. Descarte Influenza (coinfeccção é infrequente). Notifique COVID-19 com CID-10 B972. Avalie indicação de tratamento com Nirmatrelvir/Ritonavir.</li>
+                                    <li><strong>NEGATIVO:</strong> Descarte COVID-19.
+                                        <ul class="list-circle list-inside pl-6 mt-1 space-y-1">
+                                            <li><strong>Se suspeita de Influenza:</strong> Continue o manejo para Influenza (se ainda não tiver feito, avalie indicação de Oseltamivir).</li>
+                                            <li><strong>Se não preenche critérios para suspeita de Influenza:</strong> Descarte também Influenza, avalie para diagnósticos diferenciais e se deve manter paciente afastado/em isolamento (se febre, tosse ou coriza/espirros nas últimas 24h, mantenha em isolamento).</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="text-center my-8 border-t pt-6">
+                             <a href="https://bit.ly/packfloripa2025" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Acessar PACK Brasil
+                            </a>
+                            <p class="text-sm text-gray-700 mt-3">§ Se paciente adulto (> 18 anos): utilize o PACK para decidir e interpretar teste de COVID.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center">
+                            <img src="https://i.imgur.com/8kLuA4c.png" alt="Fluxograma para manejo de caso suspeito ou confirmado de COVID-19 do PACK" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Fluxograma para manejo de caso suspeito ou confirmado de COVID-19</p>
+                        </div>
+
                     </div>
                 </details>
 
-                <!-- Módulo 4: Tratamento Sintomático e Recomendações Gerais -->
+                <!-- Passo 4: Tratamento Sintomático e Cuidados Gerais -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden group">
                     <summary class="flex items-center justify-between p-6 cursor-pointer">
-                        <h2 class="text-2xl font-semibold text-green-700">Módulo 4: Tratamento Sintomático e Cuidados Gerais</h2>
+                        <h2 class="text-2xl font-semibold text-green-700">Passo 4: Tratamento Sintomático e Cuidados Gerais</h2>
                         <svg class="w-6 h-6 text-green-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="p-6 border-t border-gray-200 module-content">
@@ -198,34 +285,55 @@
                             <p class="font-bold">Atenção: Evite o uso de Anti-inflamatórios!</p>
                             <p>O uso rotineiro de AINEs (ex: Ibuprofeno, Diclofenaco) deve ser evitado. Eles podem mascarar a piora clínica e estão associados a um risco aumentado de complicações, como pneumonia bacteriana secundária. Em crianças, há o risco de Síndrome de Reye com AAS.</p>
                         </div>
-                        <ul class="space-y-4">
+                        <ul class="space-y-4 list-disc list-inside">
                             <li><strong>Febre e Dor:</strong> Prescrever <strong>Paracetamol</strong> ou <strong>Dipirona</strong> 500-1000mg a cada 6 horas.</li>
                             <li><strong>Corticoides:</strong> Não prescrever, exceto em exacerbações de asma/DPOC ou em COVID-19 grave com necessidade de O2.</li>
-                            <li><strong>Tosse:</strong> Medidas caseiras como uma colher de chá de mel.</li>
+                            <li><strong>Tosse:</strong> Medidas caseiras como uma colher de chá de mel. Evite se paciente tem diabetes.</li>
                             <li><strong>Hidratação:</strong> Orientar a ingestão de pelo menos 2L de água por dia.</li>
-                            <li><strong>Isolamento:</strong> Orientar isolamento domiciliar por 7-10 dias do início dos sintomas, com reavaliação para liberação.</li>
-                            <li><strong>Higiene:</strong> Reforçar a importância da higiene das mãos, etiqueta respiratória e uso de máscara.</li>
+                            <li><strong>Isolamento:</strong> Orientar isolamento domiciliar por 7-10 dias do início dos sintomas (independente do resultado do primeiro TRAg), com reavaliação para liberação.</li>
+                            <li><strong>Se HAS ou diabetes compensada:</strong> Não altere tratamento com enalapril/losartana/similares ou corticoide inalatório.</li>
+                            <li><strong>Ensine e reforce práticas de higiene:</strong> Ensine e reforce higiene frequente das mãos, etiqueta respiratória e uso de máscara cirúrgica/N95.</li>
+                            <li><strong>Aconselhe sintomas:</strong> Maioria dos casos são leves e melhoram sem tratamento em 7 a 14 dias. Tosse, fadiga e mal-estar podem persistir mais uma a duas semanas até seis semanas.</li>
+                            <li><strong>Oriente quando deve ligar SAMU ou procurar emergência:</strong> Se iniciar com falta de ar/dificuldade para respirar súbita.</li>
                         </ul>
+
+                        <div class="text-center my-8 border-t pt-6">
+                            <a href="https://bit.ly/packfloripa2025" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Acessar PACK Brasil
+                            </a>
+                            <p class="text-sm text-gray-700 mt-3">§ Se paciente adulto (> 18 anos): utilize o PACK para decidir e interpretar teste de COVID.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center">
+                            <img src="https://i.imgur.com/8kLuA4c.png" alt="Fluxograma para manejo de caso suspeito ou confirmado de COVID-19 do PACK" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Fluxograma para manejo de caso suspeito ou confirmado de COVID-19</p>
+                        </div>
+                         <div class="bg-gray-100 p-4 rounded-lg text-center mt-6">
+                            <img src="https://i.imgur.com/DVeXen0.png" alt="Orientações sobre práticas de segurança" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Orientações sobre práticas de segurança</p>
+                        </div>
                     </div>
                 </details>
                 
-                <!-- Módulo 5: Tratamento com Oseltamivir -->
+                <!-- Passo 5: Tratamento específico para Influenza (Oseltamivir) ou COVID-19 (Nirmatrelvir/Ritonavir) -->
                 <details class="bg-white rounded-xl shadow-md overflow-hidden group">
                     <summary class="flex items-center justify-between p-6 cursor-pointer">
-                        <h2 class="text-2xl font-semibold text-purple-700">Módulo 5: Tratamento Específico para Influenza (Oseltamivir)</h2>
+                        <h2 class="text-2xl font-semibold text-purple-700">Passo 5: Tratamento específico para Influenza (Oseltamivir) ou COVID-19 (Nirmatrelvir/Ritonavir)</h2>
                         <svg class="w-6 h-6 text-purple-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="p-6 border-t border-gray-200 module-content">
+                        
                         <div class="bg-purple-50 p-4 rounded-lg border border-purple-200 mb-6">
                             <h3 class="font-bold text-lg mb-2">Indicação de Oseltamivir</h3>
                             <p>Prescrever para casos suspeitos de Influenza com fatores de risco para complicações, idealmente nas primeiras <strong>48 horas</strong> do início dos sintomas.</p>
-                            <p class="text-sm mt-2"><strong>Nota:</strong> Em gestantes, pode-se iniciar em até 3-4 dias. Em casos de SRAG, o benefício pode ocorrer mesmo se iniciado em até 5 dias.</p>
+                            <p class="text-sm mt-2"><strong>Nota 1:</strong> Em gestantes, pode-se iniciar em até 3-4 dias. Em casos de SRAG, o benefício pode ocorrer mesmo se iniciado em até 5 dias.</p>
+                            <p class="text-sm mt-2"><strong>Nota 2:</strong> Oseltamivir não está indicado para o tratamento de covid-19 ou infecções por outros vírus.</p>
                         </div>
 
-                        <h3 class="font-bold text-xl mb-4">Grupos de Risco para Complicações por Influenza:</h3>
+                        <h3 class="font-bold text-xl mb-4">Fatores de Risco para Complicações por Influenza:</h3>
                         <div class="p-4 bg-gray-100 rounded-lg">
                             <ul class="list-disc list-inside space-y-1 columns-1 md:columns-2">
-                                <li>Gestantes e puérperas (até 2 semanas)</li>
+                                <li>Gestantes e puérperas (até 2 semanas pós-parto)</li>
                                 <li>Adultos ≥ 60 anos</li>
                                 <li>Crianças < 5 anos (especialmente < 2 anos)</li>
                                 <li>População indígena</li>
@@ -235,7 +343,7 @@
                                 <li>Doenças hematológicas (ex: anemia falciforme)</li>
                                 <li>Distúrbios metabólicos (incluindo Diabetes Mellitus)</li>
                                 <li>Imunossupressão (medicamentos, neoplasias, HIV)</li>
-                                <li>Obesidade (IMC ≥ 40 em adultos)</li>
+                                <li>Obesidade (especialmente se IMC ≥ 40 em adultos)</li>
                                 <li>Transtornos neurológicos que afetam a função respiratória</li>
                             </ul>
                         </div>
@@ -248,6 +356,11 @@
                                 <li><strong>Complicações Graves e Hospitalizações:</strong> Revisões sistemáticas e meta-análises (Cochrane 2014, JAMA 2023) <strong>não encontraram evidência convincente</strong> de que o oseltamivir reduza significativamente complicações graves, hospitalizações ou mortalidade em ambiente ambulatorial.</li>
                                 <li><strong>Justificativa da Recomendação:</strong> A indicação se baseia no <strong>princípio da precaução</strong>. Dado o potencial de gravidade da influenza em grupos vulneráveis e o perfil de segurança favorável do medicamento (principais efeitos adversos são náuseas/vômitos leves), o potencial benefício, mesmo que modesto, supera os riscos.</li>
                             </ul>
+                            <div class="mt-4 text-center">
+                                <a href="https://drive.google.com/file/d/12kGNnkaKG2e-Ktj6ij2d4UChXZBWWkos/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors text-sm">
+                                    Saiba Mais: Parecer Técnico - Osetalmivir (maio 2025)
+                                </a>
+                            </div>
                         </div>
 
                         <div class="mt-8">
@@ -273,13 +386,98 @@
                                 <p class="text-sm mt-2">Ajustar a dose em caso de comprometimento renal. Para crianças que não engolem cápsulas, o conteúdo pode ser diluído em água conforme orientação.</p>
                             </div>
                         </div>
+
+                        <hr class="my-10 border-t-2 border-gray-300">
+
+                        <div class="bg-green-50 p-4 rounded-lg border border-green-200 mb-6">
+                            <h3 class="font-bold text-lg mb-2">Indicação de Nirmatrelvir/Ritonavir</h3>
+                            <p>Prescrever para casos confirmados de COVID-19 (TRAg ou PCR positivo), independente o status vacinal, que estejam com sintomas há ≤ 5 dias (considere data do início dos sintomas como D1) e não necessitam de O2 suplementar e tenham fatores de risco para complicações por COVID-19 e não tenham contraindicação ao medicamento.</p>
+                            <p class="text-sm mt-2"><strong>Nota:</strong> Se paciente fez uso recente de nirmatrelvir/ritonavir e após 2-7 dias apresentou reativação de COVID-19, não prescreva novamente.</p>
+                        </div>
+                        
+                        <h3 class="font-bold text-xl mb-4">Fatores de Risco para Complicações por COVID-19:</h3>
+                        <div class="p-4 bg-gray-100 rounded-lg mb-6">
+                             <ul class="list-disc list-inside space-y-1">
+                                <li>Idade ≥ 65 anos</li>
+                                <li>HIV com CD4 < 200 ou em interrupção/sem tratamento</li>
+                                <li>TFGe conhecida < 60 mL/min e > 30 mL/min</li>
+                                <li>Câncer com tratamento quimio/radioterápico nos últimos 6 meses</li>
+                                <li>Uso de medicamento imunossupressor ou modificador da resposta imune</li>
+                                <li>Imunodeficiência primária grave ou erro inato do metabolismo</li>
+                             </ul>
+                        </div>
+                        
+                        <h3 class="font-bold text-xl mb-4">Contraindicações para a prescrição de nirmatrelvir/ritonavir:</h3>
+                        <div class="p-4 bg-red-100 border border-red-300 rounded-lg mb-6">
+                             <ul class="list-disc list-inside space-y-1">
+                                <li>Necessita de oxigênio (sintomas graves)</li>
+                                <li>Gestante (se risco de gestação, exclua gravidez)</li>
+                                <li>TFGe ≤ 30 mL/min (insuficiência renal grave/dialítica)</li>
+                                <li>Insuficiência hepática grave (Child-Pugh classe C)</li>
+                                <li>Registro de TGP últimos 6 meses > 5 vezes o limite superior de normalidade (LSN)</li>
+                                <li>Peso < 40 Kg</li>
+                                <li>Uso de medicamento com interação com nirmatrelvir/ritonavir e não é possível interromper/reduzir dose temporariamente</li>
+                             </ul>
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-4">Posologia do Nirmatrelvir/Ritonavir:</h3>
+                        <div class="p-4 bg-gray-100 rounded-lg mb-8">
+                             <ul class="list-disc list-inside space-y-2">
+                                <li>Prescreva nirmatrelvir 150mg 2 comprimidos cada 12 horas mais ritonavir 100mg 1 comprimido cada 12 horas por 5 dias.</li>
+                                <li><strong>Nota 1:</strong> Se amamentando, oriente interromper amamentação durante uso e até 7 dias após última dose.</li>
+                                <li><strong>Nota 2:</strong> Se TFGe conhecida ou suspeita < 60 mL/min e ≥ 30 mL/min: prescreva nirmatrelvir 150mg 1 comprimido cada 12 horas mais ritonavir 100mg 1 comprimido cada 12 horas por 5 dias.</li>
+                                <li><strong>Nota 3:</strong> Nirmatrelvir/ritonavir não está indicado para o tratamento de influenza ou infecções por outros vírus.</li>
+                             </ul>
+                        </div>
+
+                        <div class="text-center my-8 border-t pt-6">
+                            <a href="https://bit.ly/packfloripa2025" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Acessar PACK Brasil
+                            </a>
+                            <p class="text-sm text-gray-700 mt-3">§ Se paciente adulto (> 18 anos): utilize o PACK para decidir e interpretar teste de COVID.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center">
+                            <img src="https://i.imgur.com/PUNvFNO.png" alt="Fluxograma para tratamento de COVID-19 com nirmatrelvir/ritonavir" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Fluxograma para decidir se caso suspeito ou confirmado de COVID-19 tem indicação de tratamento com nirmatrelvir/ritonavir.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Passo 6: Quando sair do isolamento -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <h2 class="text-2xl font-semibold text-cyan-700">Passo 6: Quando sair do isolamento</h2>
+                        <svg class="w-6 h-6 text-cyan-700 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 border-t border-gray-200 module-content">
+                        <div class="p-4 rounded-lg bg-blue-50 border border-blue-200 mb-4">
+                            <h3 class="font-bold text-lg mb-2">Se NÃO TEM COVID-19:</h3>
+                            <p>Oriente que paciente pode sair do isolamento quando estiver 24h sem febre e sem antitérmicos. Se permanência dos sintomas respiratórios, manter cuidados de etiqueta respiratória até melhora dos sintomas respiratórios.</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-green-50 border border-green-200 mb-6">
+                            <h3 class="font-bold text-lg mb-2">Se TEM COVID-19:</h3>
+                            <p>Siga o algoritmo do PACK para decidir sobre a saída do isolamento.</p>
+                        </div>
+                        
+                        <div class="text-center my-8 border-t pt-6">
+                            <a href="https://bit.ly/packfloripa2025" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Acessar PACK Brasil
+                            </a>
+                            <p class="text-sm text-gray-700 mt-3">§ Se paciente adulto (> 18 anos): utilize o PACK para decidir e interpretar teste de COVID.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center">
+                            <img src="https://i.imgur.com/fEr371M.png" alt="Fluxograma para decidir se caso de COVID-19 pode sair do isolamento" class="w-full max-w-lg mx-auto rounded-lg shadow-md border">
+                            <p class="text-xs text-gray-500 italic mt-2">Fluxograma para decidir se caso de COVID-19 pode sair do isolamento.</p>
+                        </div>
                     </div>
                 </details>
                 
-                <!-- Módulo 6: Fluxograma Resumo -->
-                <details class="bg-white rounded-xl shadow-md overflow-hidden group open" open>
+                <!-- Passo 7: Fluxograma Resumo do Manejo -->
+                <details class="bg-white rounded-xl shadow-md overflow-hidden group">
                     <summary class="flex items-center justify-between p-6 cursor-pointer">
-                        <h2 class="text-2xl font-semibold text-gray-800">Fluxograma Resumo do Manejo</h2>
+                        <h2 class="text-2xl font-semibold text-gray-800">Passo 7: Fluxograma Resumo do Manejo</h2>
                         <svg class="w-6 h-6 text-gray-800 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="p-6 border-t border-gray-200 module-content">
@@ -293,6 +491,18 @@
                     </div>
                 </details>
 
+                <!-- Aprofunde seus conhecimentos -->
+                <section class="bg-white rounded-xl shadow-md p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Aprofunde seus conhecimentos</h2>
+                    <p class="mb-4">Para uma visão completa e detalhada de todo o protocolo, acesse o documento de referência.</p>
+                    <div class="text-center">
+                        <a href="https://drive.google.com/file/d/1z8Cg_pJELflPBHJ46TtTmJra5TRwPxoq/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors shadow-md">
+                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Avaliação e Manejo Ambulatorial (PDF Completo)
+                        </a>
+                    </div>
+                </section>
+
                 <!-- Seção do Quiz -->
                 <section id="quiz-section" class="bg-white rounded-xl shadow-md p-6">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Quiz Interativo: Teste seu Conhecimento</h2>
@@ -304,7 +514,7 @@
                 <section class="bg-white rounded-xl shadow-md p-8 text-center">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-4">Finalize o Curso</h2>
                     <p class="text-gray-600 mb-6">Para finalizar o curso e obter seu certificado faça o teste de aproveitamento clicando no botão abaixo:</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenSTEs0kGYAYul7gL624f57smoh6sMkVxUhCfyrv39BgG6KA/viewform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors shadow-lg text-lg">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScoGAzSgWdOphZDK3tB6AAjDpyQ2cla6dkLBXLlkX0C1dxoGA/viewform?usp=sharing&ouid=110410574929128285229" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors shadow-lg text-lg">
                         <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                         Teste de Aproveitamento
                     </a>
@@ -408,7 +618,7 @@
             },
             {
                 question: "O uso de Ibuprofeno é recomendado como primeira linha para febre e dores no corpo em casos de SG.",
-                options: ["Verdadeadeiro", "Falso"],
+                options: ["Verdadeiro", "Falso"],
                 answer: "Falso"
             },
             {
